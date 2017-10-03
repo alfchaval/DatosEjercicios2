@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.datosejercicios1.Main1Activity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/euros"
+                />
+
+            <EditText
+                android:id="@+id/edtEuros"
+                android:layout_width="@dimen/number_size"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorRed"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dolares"
+                />
+
+            <EditText
+                android:id="@+id/edtDolares"
+                android:layout_width="@dimen/number_size"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorRed"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rbtnDaE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dolares_a_euros"
+            />
+        <RadioButton
+            android:checked="false"
+            android:id="@+id/rbtnEaD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/euros_a_dolares"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cambio_dolares_a_euros"/>
+
+        <EditText
+            android:id="@+id/edtDaE"
+            android:layout_width="@dimen/number_less_size"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="#008800"
+            android:textColorHint="#DDDDDD"
+            android:text="0.846345902"
+            android:hint="0.846345902"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convertir"
+        />
+
+</LinearLayout>
+

@@ -43,9 +43,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn4:
                 intent = new Intent(this, Main4Activity.class);
                 break;
-            case R.id.btn5:
-                intent = new Intent(this, Main5Activity.class);
-                break;
             default:
                 break;
         }

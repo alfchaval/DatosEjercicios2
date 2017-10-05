@@ -20,7 +20,6 @@
         <activity android:name=".Main2WebActivity"/>
         <activity android:name=".Main3Activity"/>
         <activity android:name=".Main4Activity"/>
-        <activity android:name=".Main5Activity"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>

@@ -16,4 +16,5 @@
     <string name="http">http://</string>
     <string name="https">https://</string>
     <string name="comenzar">Comenzar</string>
+    <string name="reiniciar">Reiniciar</string>
 </resources>

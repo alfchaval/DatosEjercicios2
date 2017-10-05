@@ -28,7 +28,13 @@
             android:layout_height="wrap_content"
             android:text="0"
             android:layout_weight="1"
-            android:gravity="end"
+            />
+
+        <Button
+            android:id="@+id/btnReiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reiniciar"
             />
 
     </LinearLayout>
@@ -37,22 +43,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="1">
+        android:gravity="center"
+        android:layout_weight="3">
 
         <Button
             android:id="@+id/btnResta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
-            android:layout_weight="1"
             />
 
         <TextView
+            android:id="@+id/txvTiempo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="00:00"
-            android:id="@+id/textoTiempo"
-            android:layout_weight="5"
+            android:text="01:00"
+            android:layout_weight="1"
             android:gravity="center"
             />
 
@@ -61,10 +67,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
-            android:layout_weight="1"
             />
 
     </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/rbtnDescendente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descendete"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtnAscendente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ascendente"
+            android:checked="false"
+            />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/btnComenzar"

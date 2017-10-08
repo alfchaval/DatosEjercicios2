@@ -29,7 +29,7 @@ public class Main3Activity extends AppCompatActivity {
 
         popup = new AlertDialog.Builder(this);
 
-        //MediaPlayer.create(this, R.raw.audio);
+        mp = MediaPlayer.create(this, R.raw.audio);
 
         txvCafes = (TextView)findViewById(R.id.txvCafes);
         txvTiempo = (TextView)findViewById(R.id.txvTiempo);
@@ -45,7 +45,8 @@ public class Main3Activity extends AppCompatActivity {
             public void onClick(View view) {
                 if (miContador != null) miContador.cancel();
                 //Lo suyo sería evitar que se puedan poner 0 minutos
-                //pero lo permito para poder comprobar lo que ocurre al llegar al décimo café sin tener que esperar 10 minutos.
+                //pero lo permito para poder comprobar lo que ocurre al llegar al décimo café
+                // sin tener que esperar 10 minutos.
                 if(contadorTiempo >= 1) {
                     contadorTiempo--;
                 }
@@ -109,14 +110,13 @@ public class Main3Activity extends AppCompatActivity {
         @Override
         public void onFinish() {
             txvTiempo.setText("FIN");
-            //mp.start();
+            mp.start();
             contadorCafes++;
             txvCafes.setText(contadorCafes+"");
             if(contadorCafes >= 10) {
                 popup.setTitle("FIN");
                 popup.setMessage("Se alcanzó el máximo de cafés");
-                popup.setPositiveButton("También OK", null);
-                popup.setNegativeButton("OK", null);
+                popup.setPositiveButton("OK", null);
                 popup.show();
             }
         }

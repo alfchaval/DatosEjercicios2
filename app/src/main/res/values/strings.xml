@@ -1,20 +1,10 @@
 <resources>
-    <string name="app_name">DatosEjercicios1</string>
+    <string name="app_name">DatosEjercicios2</string>
     <string name="ejercicio_1">Ejercicio 1</string>
     <string name="ejercicio_2">Ejercicio 2</string>
     <string name="ejercicio_3">Ejercicio 3</string>
     <string name="ejercicio_4">Ejercicio 4</string>
     <string name="ejercicio_5">Ejercicio 5</string>
-    <string name="convertir">Convertir</string>
-    <string name="euros">Euros:</string>
-    <string name="dolares">Dólares:</string>
-    <string name="dolares_a_euros">Dólares a Euros</string>
-    <string name="euros_a_dolares">Euros a Dólares</string>
-    <string name="cambio_dolares_a_euros">Cambio Dólares a Euros</string>
-    <string name="introduce_la_direccion_web">Introduce la dirección web:</string>
-    <string name="buscar">Buscar</string>
-    <string name="http">http://</string>
-    <string name="https">https://</string>
-    <string name="comenzar">Comenzar</string>
-    <string name="reiniciar">Reiniciar</string>
+    <string name="ejercicio_6">Ejercicio 6</string>
+    <string name="ejercicio_7">Ejercicio 7</string>
 </resources>

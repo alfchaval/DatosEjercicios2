@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.usuario.datosejercicios2.Ejercicio4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduzca una URL:"
+        />
+
+    <EditText
+        android:id="@+id/edt_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://portadaalta.mobi/cursos/"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/rg_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rbtn_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java.net"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_aahc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AAHC"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_volley"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volley"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conectar"
+            android:layout_weight="1"
+            android:id="@+id/btn_connect"
+            />
+
+    </RadioGroup>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="web.txt"
+            android:layout_weight="5"
+            />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

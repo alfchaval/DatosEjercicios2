@@ -1,4 +1,4 @@
-package com.example.usuario.datosejercicios1;
+package com.example.usuario.datosejercicios2;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -8,7 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
-public class Main1Activity extends AppCompatActivity {
+import com.example.usuario.datosejercicios1.R;
+
+public class Ejercicio6 extends AppCompatActivity {
 
     private EditText edtEuros, edtDolares, edtDaE;
     private RadioButton rbtnDaE, rbtnEaD;
@@ -17,11 +19,10 @@ public class Main1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_ejercicio6);
 
         edtEuros = (EditText)findViewById(R.id.edtEuros);
         edtDolares = (EditText)findViewById(R.id.edtDolares);
-        edtDaE = (EditText)findViewById(R.id.edtDaE);
         rbtnDaE = (RadioButton)findViewById(R.id.rbtnDaE);
         rbtnEaD = (RadioButton)findViewById(R.id.rbtnEaD);
         btnConvertir = (Button)findViewById(R.id.btnConvertir);
